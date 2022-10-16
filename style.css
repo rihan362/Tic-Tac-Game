@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@700&display=swap');
+html, body {
+  height: 100%;
+  width: 100%;
+  font-family: 'Fuzzy Bubbles', cursive;
+}
+*{
+  margin: 0px;
+  padding: 0px;
+}
+nav{
+  background-color: #db24c3;
+  height: 48px;
+  color: whitesmoke;
+  font-size: 20px;
+  font-family: 'Fuzzy Bubbles', cursive;
+      display: flex;
+    align-items: center;
+    padding: 0px 29px;
+}
+nav ul{
+  list-style: none;
+}
+.gamecontainer{
+  display: flex;
+  justify-content: center;
+  margin-top:30px ;
+}
+.container{
+  display:grid;
+grid-template-rows:repeat(3,10vw);
+  grid-template-columns:repeat(3,10vw);
+  position: relative;
+}
+.box{
+  border:2px solid black;
+  font-size:5vw;
+  display:flex;
+  cursor:pointer;
+  align-items:center;
+  justify-content:center
+}
+.box:hover{
+  background-color:#eaaee8;
+}
+.gameinfo{
+      padding: 14px 56px;
+    margin: 3px 19px;
+}
+.br-0{
+  border-right:0;
+}
+.bl-0{
+  border-left:0;
+}
+.bm-0{
+  border-bottom:0;
+}
+.bt-0{
+  border-top:0;
+}
+
+.imgbox img{
+  width:0;
+  transition: width 1s ease-in-out;
+}
+#reset{
+      border: 1px solid rgb(201 12 106);
+    padding: 0.8vw 1vw;
+    margin: 1.2vw 1vw;
+  cursor:pointer;
+    color: rgb(144 238 144);
+    font-size: medium;
+    background-color: #f18bf8;
+  border-radius:1.2vw;
+}
+.info{
+      padding: 1px 10px;
+    font-size: 1.8vw;
+    background-color: rgb(239 191 199);
+    border: 1px solid rgb(255 192 203);
+    border-radius: 2.2vw;
+}
+#reset:hover{
+  background-color:floralwhite
+
+}
+@media screen and (max-width: 800px) {
+  .gamecontainer{
+    flex-wrap: wrap;
+  }
+  .gameinfo{
+    margin-top: 34px;
+  }
+  .gameinfo h1{
+    font-size:1.8rem;
+  }
+}
+
+.line{
+  background-color:#9b13a4;
+  height:3px;
+  width:0vw;
+  position:absolute;
+  transition: 1s ease-in-out;
+}
